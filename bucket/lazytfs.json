@@ -1,0 +1,22 @@
+{
+    "version": "1.1.0",
+    "description": "Terminal UI for Team Foundation Server (TFS) version control, inspired by lazygit",
+    "homepage": "https://github.com/dandygardad/lazytfs",
+    "license": "MIT",
+    "notes": "Run lazytfs inside a mapped TFS workspace folder. Requires tf.exe (comes with Visual Studio) on your PATH.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/dandygardad/lazytfs/releases/download/v1.1.0/lazytfs.exe",
+            "hash": "1b81de24420c5161496baf77de5ca711c872c29f44de1285695b9305dd89d34c"
+        }
+    },
+    "bin": "lazytfs.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/dandygardad/lazytfs/releases/download/v$version/lazytfs.exe"
+            }
+        }
+    }
+}
